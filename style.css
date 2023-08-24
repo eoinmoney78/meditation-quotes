@@ -1,0 +1,233 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Or any other preferred font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    background-image: url('assets/peacefull-2.png'); /* Assuming the image is located in the 'assets' directory */
+    background-size: cover; /* Makes the image cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed;
+}
+
+
+.content-wrap {
+    flex: 1 0 auto; /* This makes it expand to take up available space */
+}
+
+/* .container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px 20px;
+
+} */
+
+.container {
+    max-width: 100%;
+    margin: 0 auto; /* This sets the top and bottom margin to 0 while keeping auto margins on the sides to center the content */
+    padding: 10px 20px;
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+   
+}
+li {
+    color : gold;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    background-color: #897e7e;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+.about p {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    background-color: rgb(120, 94, 61);
+    border-radius: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+   
+} 
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px 0;
+    }
+}
+/* Mobile View (with media query) */
+@media only screen and (max-width: 768px) { /* This breakpoint (768px) is just an example; adjust as needed */
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* Daily Featured Quote */
+.daily-quote {
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.daily-quote h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+}
+
+/* Meditation Timer */
+.meditation-timer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timer-display {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.start-timer {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.start-timer:hover {
+    background-color: #555;
+}
+
+/* Quote Categories */
+.quote-categories h2,
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(247, 203, 90);
+}
+
+.quote-categories ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quote-categories li a {
+    text-decoration: none;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quote-categories li a:hover {
+    background-color: #bbb;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+}
