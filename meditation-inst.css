@@ -1,0 +1,94 @@
+/* Reset some browser-specific defaults */
+body, h1, h2, h3, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+body.meditation-page {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+}
+
+.nav-link {
+    color: #f4f4f4;
+    margin-right: 20px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Titles */
+.main-title, .section-title {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.sub-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Content sections */
+.section-description, .step-item, .tip-item, .guide-item {
+    margin-bottom: 20px;
+}
+
+.step-heading, .step-item strong {
+    color: #555;
+}
+
+/* Footer */
+.footer-main {
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+/* Adding responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+    .nav-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .main-title, .section-title {
+        font-size: 24px; /* Adjusting the font size */
+    }
+}

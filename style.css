@@ -6,19 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* body {
-    font-family: Arial, sans-serif; 
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
-*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -43,19 +31,24 @@ body {
     flex: 1 0 auto; /* This makes it expand to take up available space */
 }
 
-/* .container {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 10px 20px;
 
-} */
 
 .container {
     max-width: 100%;
     margin: 0 auto; /* This sets the top and bottom margin to 0 while keeping auto margins on the sides to center the content */
     padding: 10px 20px;
 }
+.med-nav{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    border-radius: 5px;
 
+}
+.med-nav:hover{
+    background-color: #897e7e;
+
+}
 
 /* Navigation Styles */
 nav {
