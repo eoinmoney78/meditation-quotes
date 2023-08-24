@@ -47,4 +47,4 @@ While this project is mainly for portfolio purposes, any feedback, issues, or pu
 
 ---
 
-Designed with ❤️ by [Your Name]
+Designed with ❤️ by Eoin Noonan.
