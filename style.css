@@ -144,17 +144,25 @@ footer {
 }
 
 /* Daily Featured Quote */
+
 .daily-quote {
-    background-color: #eee;
+    background-color: rgba(187, 127, 127, 0.2); /* This sets the background color with a 20% opacity */
+    width: 500px;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
+
 .daily-quote h1 {
+    color: #fff; /* This sets the text color to white */
     text-align: center;
     margin-bottom: 20px;
 }
+
+
+
 
 blockquote {
     font-style: italic;
@@ -168,7 +176,7 @@ blockquote cite {
 }
 
 /* Meditation Timer */
-.meditation-timer {
+/* .meditation-timer {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -191,14 +199,14 @@ blockquote cite {
 
 .start-timer:hover {
     background-color: #555;
-}
+} */
 
 /* Quote Categories */
 .quote-categories h2,
 .about h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: rgb(247, 203, 90);
+    margin-bottom: 100px;
+    color: rgb(67, 52, 16);
 }
 
 .quote-categories ul {
@@ -206,6 +214,7 @@ blockquote cite {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+    list-style-type: none;
 }
 
 .quote-categories li a {
@@ -214,6 +223,7 @@ blockquote cite {
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    
 }
 
 .quote-categories li a:hover {
@@ -223,4 +233,11 @@ blockquote cite {
 /* About Section */
 .about {
     text-align: center;
+
+}
+.about p {
+    background-color: rgba(187, 127, 127, 0.);
+    width: 450px;
+    margin:0 auto;
+    color: black;
 }
