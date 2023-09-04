@@ -19,7 +19,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     font-size: 16px;
-    background-image: url('assets/peacefull-2.png'); /* Assuming the image is located in the 'assets' directory */
+    background-image: url('assets/morn-med.png'); /* Assuming the image is located in the 'assets' directory */
     background-size: cover; /* Makes the image cover the entire viewport */
     background-repeat: no-repeat; /* Prevents image from repeating */
     background-position: center center; /* Centers the image */
@@ -89,12 +89,14 @@ nav .nav-links li a:hover {
 main {
     padding: 40px 0;
 }
+
 .about p {
-    color: white;
+
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
-    background-color: rgb(120, 94, 61);
+    background-color: transparent;
     border-radius: 10px;
+    color: white;
 }
 
 
@@ -231,7 +233,7 @@ blockquote cite {
 }
 
 /* About Section */
-.about {
+/* .about {
     text-align: center;
 
 }
@@ -240,4 +242,16 @@ blockquote cite {
     width: 450px;
     margin:0 auto;
     color: black;
+} */
+.about p {
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    width: 600px;
+    margin:0 auto;
 }
+
+
